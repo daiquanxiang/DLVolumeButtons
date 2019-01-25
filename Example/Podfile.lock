@@ -1,0 +1,16 @@
+PODS:
+  - DLVolumeButtons (0.1.0)
+
+DEPENDENCIES:
+  - DLVolumeButtons (from `../`)
+
+EXTERNAL SOURCES:
+  DLVolumeButtons:
+    :path: ../
+
+SPEC CHECKSUMS:
+  DLVolumeButtons: 1b8834851e88b70e94f0213f2888078c4cf36351
+
+PODFILE CHECKSUM: c0dbac2e62d16cadeb5103433cdb194ae260780b
+
+COCOAPODS: 1.4.0

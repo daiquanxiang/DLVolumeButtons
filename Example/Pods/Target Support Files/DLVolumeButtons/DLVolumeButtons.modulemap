@@ -1,0 +1,6 @@
+framework module DLVolumeButtons {
+  umbrella header "DLVolumeButtons-umbrella.h"
+
+  export *
+  module * { export * }
+}

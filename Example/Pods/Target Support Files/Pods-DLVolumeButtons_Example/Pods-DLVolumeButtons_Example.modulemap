@@ -1,0 +1,6 @@
+framework module Pods_DLVolumeButtons_Example {
+  umbrella header "Pods-DLVolumeButtons_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

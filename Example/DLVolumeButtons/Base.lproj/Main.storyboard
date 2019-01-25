@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,7 +20,47 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否捕捉音量键事件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecK-1u-s1F">
+                                <rect key="frame" x="47" y="319" width="156" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="←请点击上音量键" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D5w-r0-HXL">
+                                <rect key="frame" x="16" y="69" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TgX-ee-BIZ">
+                                <rect key="frame" x="277" y="315.5" width="57" height="29"/>
+                                <segments>
+                                    <segment title="关"/>
+                                    <segment title="开"/>
+                                </segments>
+                                <connections>
+                                    <action selector="valueChanged:" destination="whP-gf-Uak" eventType="valueChanged" id="LGY-CJ-Zm4"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="←请点击下音量键" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us0-Ik-WQ6">
+                                <rect key="frame" x="16" y="124" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ecK-1u-s1F" firstAttribute="top" secondItem="Us0-Ik-WQ6" secondAttribute="bottom" constant="174" id="5dm-Rg-cqN"/>
+                            <constraint firstItem="D5w-r0-HXL" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="GTn-SS-XO7"/>
+                            <constraint firstItem="TgX-ee-BIZ" firstAttribute="leading" secondItem="ecK-1u-s1F" secondAttribute="trailing" constant="74" id="NHS-y8-RhY"/>
+                            <constraint firstItem="ecK-1u-s1F" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="31" id="PZb-P1-WIZ"/>
+                            <constraint firstItem="TgX-ee-BIZ" firstAttribute="centerY" secondItem="ecK-1u-s1F" secondAttribute="centerY" id="YUv-jq-0fp"/>
+                            <constraint firstItem="Us0-Ik-WQ6" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" id="dF9-2z-HVn"/>
+                            <constraint firstItem="D5w-r0-HXL" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="49" id="eMh-cf-0Bc"/>
+                            <constraint firstItem="Us0-Ik-WQ6" firstAttribute="top" secondItem="D5w-r0-HXL" secondAttribute="bottom" constant="34" id="wWk-SN-Di4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
