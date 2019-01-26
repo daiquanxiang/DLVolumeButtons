@@ -21,15 +21,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	
-    
-    
+	[self setupVolumeButtons];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    [self setupVolumeButtons];
 }
 
 - (void)setupVolumeButtons
@@ -44,6 +41,7 @@
             NSLog(@"点击了 下音量键");
             [weakSelf showAlertWithText:@"点击了 下音量键"];
         }];
+        
         if ([self.volumeButtons respondsToSelector:@selector(changeVolumeSuperView:)]) {
             [self.volumeButtons changeVolumeSuperView:self.view];
         }
