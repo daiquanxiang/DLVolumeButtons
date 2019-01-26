@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'DLVolumeButtons'
-  s.version          = '0.1.2'
-  s.summary          = 'A short description of DLVolumeButtons.'
+  s.version          = '0.1.3'
+  s.summary          = '捕捉音量键事件，不显示系统音量窗口。捕捉音量事件，可以控制继续修改音量，也可以不修改音量。'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?

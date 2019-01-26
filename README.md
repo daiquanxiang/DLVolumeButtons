@@ -67,6 +67,7 @@ pod 'DLVolumeButtons'
 ```
 
 ##注意
+
 建议最好将当前可视窗口传给 DLVolumeButton，代码里面创建了一个 MPVolumeView 音量view，默认放在最前面的 window里，当你替换了音量键事件后，没有将新创建 音量view 放在当前 self.view上，有可能替换了事件但是还是会出现系统改音量的窗口。
 
 ```objective-c
